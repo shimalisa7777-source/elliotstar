@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>プライバシーポリシー | ElliotStar</title>
+  <meta name="description" content="ElliotStar（エリオットスター）のプライバシーポリシーです。個人情報の取り扱いについてご確認いただけます。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <style>
+:root {
+  --blue-50:#eff6ff;--blue-100:#dbeafe;--blue-500:#3b82f6;--blue-600:#2563eb;
+  --gray-50:#f8fafc;--gray-100:#f1f5f9;--gray-200:#e2e8f0;--gray-300:#cbd5e1;
+  --gray-400:#94a3b8;--gray-500:#64748b;--gray-600:#475569;--gray-700:#334155;
+  --gray-800:#1e293b;--gray-900:#0f172a;--white:#ffffff;
+  --primary:#2563eb;--gradient:linear-gradient(135deg,#2563eb 0%,#06b6d4 100%);
+  --shadow-md:0 4px 16px rgba(0,0,0,.08),0 2px 6px rgba(0,0,0,.04);
+  --radius-lg:16px;--radius-xl:24px;--radius-full:9999px;
+  --font:'Inter','Noto Sans JP',-apple-system,sans-serif;--transition:0.2s ease;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;font-size:16px;}
+body{font-family:var(--font);color:var(--gray-800);background:var(--white);line-height:1.7;-webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none;}
+.container{width:100%;max-width:1160px;margin:0 auto;padding:0 24px;}
+
+/* Header */
+.header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--gray-200);}
+.header-inner{display:flex;align-items:center;gap:32px;height:72px;}
+.logo{display:flex;align-items:center;gap:8px;flex-shrink:0;}
+.logo-icon{font-size:1.5rem;background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.logo-text{font-size:1.25rem;font-weight:600;color:var(--gray-900);letter-spacing:-.01em;}
+.logo-text strong{font-weight:800;}
+.nav{display:flex;align-items:center;gap:4px;margin-left:auto;}
+.nav-link{padding:8px 14px;font-size:.9rem;font-weight:500;color:var(--gray-700);border-radius:8px;transition:color var(--transition),background var(--transition);}
+.nav-link:hover{color:var(--primary);background:var(--blue-50);}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--font);font-weight:600;font-size:.95rem;border-radius:var(--radius-full);cursor:pointer;border:2px solid transparent;transition:all var(--transition);text-decoration:none;white-space:nowrap;}
+.btn-sm{padding:8px 20px;font-size:.875rem;}
+.btn-primary{background:var(--gradient);color:var(--white);box-shadow:0 8px 30px rgba(37,99,235,.25);}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(37,99,235,.35);}
+.btn-line{background:#06C755;color:var(--white);}
+.btn-line:hover{background:#05a648;transform:translateY(-2px);}
+
+/* Page Content */
+.page-section{padding:140px 0 80px;}
+.page-title{font-size:clamp(1.75rem,3vw,2.5rem);font-weight:800;color:var(--gray-900);margin-bottom:40px;text-align:center;}
+.gradient-text{background:var(--gradient);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.privacy-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-xl);padding:48px;box-shadow:var(--shadow-md);max-width:800px;margin:0 auto;}
+.privacy-subtitle{font-size:1.15rem;font-weight:700;color:var(--gray-900);margin:32px 0 12px;padding-left:16px;border-left:4px solid var(--primary);}
+.privacy-subtitle:first-of-type{margin-top:0;}
+.privacy-text{font-size:.95rem;color:var(--gray-800);line-height:1.9;margin-bottom:16px;}
+
+/* Footer */
+.footer{background:var(--gray-900);padding:48px 0 24px;}
+.footer-inner{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;padding-bottom:24px;border-bottom:1px solid rgba(255,255,255,.08);}
+.logo--white .logo-text{color:var(--white);}
+.logo--white .logo-text strong{color:var(--white);}
+.footer-links-row{display:flex;gap:24px;flex-wrap:wrap;}
+.footer-link{font-size:.875rem;color:rgba(255,255,255,.55);transition:color var(--transition);}
+.footer-link:hover{color:var(--white);}
+.footer-copy{text-align:center;font-size:.8rem;color:rgba(255,255,255,.25);padding-top:24px;}
+
+@media(max-width:768px){
+  .page-section{padding:100px 0 60px;}
+  .privacy-card{padding:28px 20px;}
+  .nav{display:none;}
+  
+  /* スマホのヘッダー調整（右端切れ・はみ出し防止） */
+  html, body { width: 100% !important; overflow-x: hidden !important; }
+  .header { width: 100% !important; max-width: 100% !important; overflow-x: hidden !important; }
+  .header-inner {
+    width: 100% !important; max-width: 100% !important; padding-left: 20px !important; padding-right: 20px !important;
+    box-sizing: border-box !important; gap: 8px !important; justify-content: space-between !important;
+    display: flex !important; align-items: center !important;
+  }
+  .header .logo-text { font-size: 1.1rem !important; }
+  
+  /* 青い「無料相談」ボタンを非表示にする（複数のクラス・属性に対応） */
+  .header .btn-primary,
+  .header .free-consult-button,
+  .header .secondary-cta,
+  .header .blue-cta,
+  .header a[href*="contact"],
+  .header a[href*="#contact"] {
+    display: none !important;
+  }
+  
+  .header .btn-line,
+  .header .line-button,
+  .header .line-cta {
+    margin-left: auto !important; white-space: nowrap !important; flex-shrink: 0 !important;
+    padding: 6px 12px !important; font-size: 0.8rem !important; max-width: 160px !important;
+  }
+}
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index3.html" class="logo">
+        <span class="logo-icon">★</span>
+        <span class="logo-text">Elliot <strong>Star</strong></span>
+      </a>
+      <nav class="nav">
+        <a href="index3.html#services" class="nav-link">サービス</a>
+        <a href="index3.html#pricing" class="nav-link">料金</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSePaG-c82nArTGFAkxvsvBjYPF9yu8j6HEDMvBHYWEHO-oSIg/viewform" target="_blank" rel="noopener noreferrer" class="nav-link">お問い合わせ</a>
+      </nav>
+      <a href="https://lin.ee/8W1Wej1" target="_blank" class="btn btn-line btn-sm">LINE相談</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSePaG-c82nArTGFAkxvsvBjYPF9yu8j6HEDMvBHYWEHO-oSIg/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">無料相談</a>
+    </div>
+  </header>
+
+  <section class="page-section">
+    <div class="container">
+      <h1 class="page-title">プライバシーポリシー</h1>
+      <div class="privacy-card">
+
+        <p class="privacy-text">ElliotStar（以下「当方」といいます）は、お客様の個人情報を適正に取り扱い、安全に保管することを最重要課題と位置づけ、お客様の個人情報の保護に努めます。</p>
+
+        <h2 class="privacy-subtitle">1. 個人情報の定義について</h2>
+        <p class="privacy-text">個人情報とは、当方が本Webサイトおよびマーケティング支援サービスを通じてお客様から提供を受ける住所、氏名、年齢、電話番号、メールアドレス、その他の個人を識別できる情報をいいます。</p>
+
+        <h2 class="privacy-subtitle">2. 個人情報の取得と利用</h2>
+        <p class="privacy-text">個人情報のご提供をお願いする時はあらかじめその利用目的を明らかにした上で、適切な範囲内において公正な方法で行います。ご提供いただいた個人情報は明示または公表した利用目的の範囲内で利用いたします。またお客様の同意なく利用目的以外に利用することはありません。</p>
+
+        <h2 class="privacy-subtitle">3. 利用目的</h2>
+        <p class="privacy-text">当方は、お客様に対し、Webマーケティング支援、AI分析レポートの提供、Web制作・運用業務、およびこれらに関するご案内・コンサルティング等のサービスをご提供するために個人情報を利用させていただきます。</p>
+
+        <h2 class="privacy-subtitle">4. 第三者への個人情報の提供</h2>
+        <p class="privacy-text">当方では、次の場合を除いて、お客様の個人情報を第三者に提供または開示することはありません。<br>
+        (1) お客様から個人情報の開示について、あらかじめ同意をいただいている場合<br>
+        (2) 法令に基づく場合<br>
+        (3) 人の生命、身体または財産の保護のために必要がある場合<br>
+        (4) 個人情報に関する機密保持契約を締結している協力会社、提携会社および業務委託会社に対して、お客様に明示した利用目的の達成に必要な範囲内において個人情報の預託を行う場合</p>
+
+        <h2 class="privacy-subtitle">5. 個人情報の安全管理について</h2>
+        <p class="privacy-text">当方は、お客様の個人情報の取り扱いに際して、適切な管理を行うとともに、外部への流失を防ぐため、セキュリティの維持に努めます。</p>
+
+        <h2 class="privacy-subtitle">6. 法令遵守と改善について</h2>
+        <p class="privacy-text">当方では、お客様の個人情報の取り扱いにあたり「個人情報の保護に関する法律」およびその他の適用される日本国法令を遵守すると共に、継続的な見直しを行いその改善、改良に努めます。これに伴い、プライバシーポリシーが予告無しに変更されることがありますことをあらかじめご了承ください。</p>
+
+        <p class="privacy-text" style="margin-top:32px;padding-top:20px;border-top:1px solid var(--gray-200);">
+          <strong>お問い合わせ先:</strong> <a href="mailto:elliotstar0305@hotmail.com" style="color:var(--primary);">elliotstar0305@hotmail.com</a>
+        </p>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a href="index3.html" class="logo logo--white">
+          <span class="logo-icon">★</span>
+          <span class="logo-text">Elliot <strong>Star</strong></span>
+        </a>
+        <div class="footer-links-row">
+          <a href="index3.html" class="footer-link">ホーム</a>
+          <a href="company.html" class="footer-link">会社概要</a>
+          <a href="https://www.instagram.com/elliot_star_next/" target="_blank" class="footer-link" style="display:inline-flex;align-items:center;gap:6px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><defs><linearGradient id="ig-fp" x1="0%" y1="100%" x2="100%" y2="0%"><stop offset="0%" stop-color="#f09433"/><stop offset="50%" stop-color="#dc2743"/><stop offset="100%" stop-color="#bc1888"/></linearGradient></defs><rect width="24" height="24" rx="6" fill="url(#ig-fp)"/><circle cx="12" cy="12" r="4.5" stroke="white" stroke-width="1.8" fill="none"/><circle cx="17.5" cy="6.5" r="1.2" fill="white"/></svg>
+            Instagram
+          </a>
+          <a href="https://lin.ee/8W1Wej1" target="_blank" class="footer-link" style="display:inline-flex;align-items:center;gap:6px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 40 40"><rect width="40" height="40" rx="8" fill="#06C755"/><path d="M20 7C12.268 7 6 12.52 6 19.308c0 6.083 5.248 11.178 12.348 12.122.481.104 1.136.317 1.302.728.149.374.097.963.047 1.34l-.21 1.266c-.064.374-.296 1.466 1.284.8 1.578-.667 8.525-5.024 11.634-8.6C34.347 24.546 34 21.97 34 19.308 34 12.52 27.732 7 20 7z" fill="white"/></svg>
+            LINE
+          </a>
+        </div>
+      </div>
+      <p class="footer-copy">© 2026 ElliotStar. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
